@@ -133,9 +133,6 @@ h1 {
   color: #ffffff;
   background-color: #3498DB;
 }
-#navigation .has-sub {
-  z-index: 1;
-}
 #navigation .has-sub:hover > a + *,
 #navigation .has-sub:focus > a + * {
   display: block;
@@ -167,12 +164,6 @@ h1 {
 #navigation .has-sub .has-sub:focus > a + * {
   display: block;
 }
-#navigation .has-sub .has-sub > a + * {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: 0;
-}
 #navigation .has-sub .has-sub > ul li a {
   background: #0c7fb0;
   border-bottom: 1px dotted #31b7f1;
@@ -190,7 +181,7 @@ h1 {
   border-bottom: 0;
 }
 @media (min-width: 768px) {
-	#navigation li {
+	#navigation > ul > li {
 	  display: inline-block;
 	  float: left;
 	  margin: 0;
@@ -200,9 +191,14 @@ h1 {
 	}
 	#navigation .has-sub > a + * {
 	  display: none;
+	  z-index: 200;
 	  position: absolute;
 	  top: 100%;
 	  left: 0;
+	}
+	#navigation .has-sub:last-child > a + * {
+	  left: auto;
+	  right: 0;
 	}
 	#navigation .has-sub > a + * a {
 	  min-width: 200px;
@@ -221,8 +217,6 @@ h1 {
 	  margin-left: -10px;
 	}
 }
-
-/* Responsive Navigation styles begin here */
 @media (max-width: 767px) {
 	#navigation li {
 	  display: block;
@@ -253,6 +247,15 @@ h1 {
 	#navigation > ul > li > a {
 		border-top: 1px dotted #2C3E50;
 	}
+}
+/* search in menu */
+#searchbox {
+	white-space:nowrap;
+}
+#searchbox .cse-input {
+	width: 170px;
+}
+#searchbox .cse-submit {
 }
 
 /* BREADCRUMB ============= */
