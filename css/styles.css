@@ -65,7 +65,7 @@
 	margin: 0 auto;
 }
 .wlimit-l {
-	max-width: 1900px;
+	max-width: 2000px;
 	margin: 0 auto;
 }
 
@@ -86,12 +86,19 @@ h1 {
 		display: none;
 	}
 }
-@media (min-width: 500px) {
-	.title-grp h1{
-		font-size: 5.4em;
+@media (max-width: 1024px) {
+	.tab-hidden {
+		display: none;
 	}
+}
+@media (min-width: 1025px) {
+	.desk-hidden {
+		display: none;
+	}
+}
+@media (min-width: 500px) {
 	h1 {
-		font-size: 4.5em;
+		font-size: 5.4em;
 	}
 }
 .title-grp>* {
@@ -283,23 +290,94 @@ h1 {
     padding: 0 0.3em;
 }
 
+/* Recipe header */
+
+.recipe-header {
+max-width: 80%;
+float: left;
+}
+.ribbon {
+ line-height: 1em;
+ position: relative;
+ background: #dd9124;
+ color: #fff;
+ text-align: center;
+ padding: .3em .6em;
+display: inline-block;
+margin-bottom: 1.5em;
+}
+.ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -.75em;
+ border: 1em solid #b9791e;
+ z-index: -1;
+ border-left-width: 1em;
+ border-right-color: transparent;
+right: -1.75em;
+width: 0.5em;
+}
+.ribbon:before {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #9d6719 transparent transparent transparent;
+ bottom: -.75em;
+ right: 0;
+ border-width: .75em .75em 0 0;
+}
+
+/* Recipe infos */
+.tab-intro {
+	clear:left;
+}
+@media (min-width: 500px) {
+	.tab-intro .pub {
+		float: right;
+		margin-left: 8px;
+	}
+}
+.info {
+	background: rgba(255, 255, 255, .5);
+	padding: 1em;
+	margin: 0;
+	margin-right: 5em;
+	clear: left;
+}
+
 /* RECIPE */
 .recipe {
 	border-radius: 2em;
 	z-index: 1;
+	padding: 6px;
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+	.recipe {
+		clear: both;
+		margin-top: 8px;
+	}
+}
+@media (min-width: 1025px) {
 	.recipe {
 		position: relative;
-		top:-5em;
+		top:-8.5em;
 		width: 60%;
 		float: right;
+		clear: both;
 	}
+}
+.pub {
+	text-align: center;
+}
+.info .pub {
+	margin: 16px;
 }
 .recipe li {
 	clear: both;
 }
-.recipe img {
+.recipe li img {
 	float: left;
 	margin-right: 1em;
 	border-radius: 1em;
@@ -310,7 +388,7 @@ ol {
 }
 ol > li {
     position:relative;
-    padding:4px 8px;
+    padding:6px 0;
     list-style:none;
 }
 ol > li:before {
@@ -338,8 +416,3 @@ li ol,
 li ul {margin-top:6px;}
 ol ol li:last-child {margin-bottom:0;}
 
-.info {
-	background: rgba(255, 255, 255, .5);
-	padding: 1em;
-	margin: 0
-}
