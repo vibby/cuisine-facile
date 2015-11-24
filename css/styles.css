@@ -367,7 +367,22 @@ width: 0.5em;
 	padding: .3em .6em;
 	background: #2980B9;
 }
-
+.recipe-popularity{
+	float: right;
+}
+.recipe-popularity+*{
+	clear: right;
+}
+.vote > *{
+	float: right;
+}
+.vote > *:hover, .vote > *:hover+*, .vote > *:hover+*+*, .vote > *:hover+*+*+* {
+	color: #094e7b;
+	background: rgba(231, 157, 51, .4);
+}
+.vote>a:hover>span:before, .vote>a:hover+a>span:before, .vote>a:hover+a+a>span:before, .vote>a:hover+a+a+a>span:before {
+	content: "\e008";
+}
 #ingredients li {
     padding: 0.2em 0;
 }

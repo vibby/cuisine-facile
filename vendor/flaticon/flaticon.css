@@ -13,18 +13,30 @@
 	font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
-}.flaticon-home166:before {
+}.flaticon-eyeball15:before {
 	content: "\e000";
 }
-.flaticon-location70:before {
+.flaticon-favourite24:before {
 	content: "\e001";
 }
-.flaticon-mail3:before {
+.flaticon-home166:before {
 	content: "\e002";
 }
-.flaticon-menu48:before {
+.flaticon-location70:before {
 	content: "\e003";
 }
-.flaticon-rss3:before {
+.flaticon-mail3:before {
 	content: "\e004";
+}
+.flaticon-menu48:before {
+	content: "\e005";
+}
+.flaticon-rss3:before {
+	content: "\e006";
+}
+.flaticon-speech90:before {
+	content: "\e007";
+}
+.flaticon-star129:before {
+	content: "\e008";
 }
