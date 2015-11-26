@@ -31,6 +31,7 @@
 	color: #2980B9;
 }
 
+/* Globals */
 body {
 	font-size: 1.5em;
 }
@@ -60,6 +61,25 @@ a:hover, a:focus {
 a:hover .cor, a:focus .cor {
 	color: #125a89;
 }
+
+/* forms */
+textarea, input, button {
+	padding: .5em 1em;
+	border: 2px solid #2980B9;
+	height: 2.8em;
+}
+textarea:focus, input:focus {
+	border-color: #E79D33;
+}
+button {
+	color: #FFF;
+	background-color: #2980B9;
+}
+button:hover, button:focus {
+	background-color: #3498DB;
+	border-color: #3498DB;
+}
+
 /* Header */
 #top-links {
 	position: relative;
@@ -369,6 +389,7 @@ width: 0.5em;
 }
 .recipe-popularity{
 	float: right;
+	margin-bottom: 0.5em;
 }
 .recipe-popularity+*{
 	clear: right;
@@ -438,6 +459,96 @@ width: 0.5em;
   background: #DC97A0;
 }
 
+/* Comments */
+.comment {
+    padding: 0 0 1em;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 1em 1.5em;
+    zoom: 1;
+}
+.comment-body {
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background: #fff;
+    width: 100%;
+}
+.comment-body p:last-child {
+    margin: 0;
+}
+.comment .attribution {
+    margin: 0.5em 0 0;
+    color: #666;
+}
+.comment .attribution .name{
+    color: #000;
+}
+
+/* Decoration */
+.comments,
+.comment {
+    position: relative;
+}
+.comments:before,
+.comment:before,
+.comment:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+.comments:before {
+    width: 3px;
+    top: 36px;
+    bottom: 26px;
+    background: rgba(0,0,0,0.1);
+}
+.comment:before {
+    width: 9px;
+    height: 9px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin: 16px 0 0 -38px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+    background: #ccc;
+}
+.comment:hover:before {
+    background: #E79D33;
+}
+.comment:after {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    background: #fff;
+    margin-left: -83px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+form.comment:after {
+	border-width: 0 0 2px 2px;
+	border-color: #3498DB;
+}
+form.comment textarea {
+	border: 2px solid #3498DB;
+    overflow: visible;
+}
+form.comment textarea:focus {
+	border-color: #E79D33;
+}
+form.comment button {
+	margin-top: 3px;
+}
+#subscribe-recipe input {
+	width: 50%;
+	min-width: 300px;
+}
 
 /* RECIPE */
 #recipe {
@@ -517,7 +628,16 @@ ol > li:before {
 li ol,
 li ul {margin-top:6px;}
 ol ol li:last-child {margin-bottom:0;}
-
+ol+*{
+	clear: both;
+}
+.recipe-vote {
+    float: left;
+    padding-bottom: 1em;
+}
+.recipe-vote, .recipe-vote span:before {
+    font-size: 30px;
+}
 .pub {
 	text-align: center;
 }

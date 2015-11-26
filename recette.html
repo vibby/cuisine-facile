@@ -76,13 +76,13 @@
 					<img src="img/259-0.jpg" class="fl"/>
 					<div class="recipe-popularity">
 						<span class="flaticon-eyeball15"></span> 216 696&nbsp; &nbsp;
-						<a href="/"><span class="flaticon-speech90"></span> 28</a>&nbsp; &nbsp;
-						<span class="flaticon-star129"></span> <strong>2.8</strong><small>/3</small>
+						<a href="/" title="Voir les commentaires"><span class="flaticon-speech90"></span> <strong>28</strong></a>&nbsp; &nbsp;
+						<span title="Note de 2.8/3 basé sur 19 votes"><span class="flaticon-star129"></span> <strong>2.8</strong><small>/3</small></span>
 						<span class="vote">
-							<a href="/vote3"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote2"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote1"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote0"><span class="flaticon-favourite24"></span></a>
+							<a href="/vote3" title="Donner une note de 3/3"><span class="flaticon-favourite24"></span></a>
+							<a href="/vote2" title="Donner une note de 2/3"><span class="flaticon-favourite24"></span></a>
+							<a href="/vote1" title="Donner une note de 1/3"><span class="flaticon-favourite24"></span></a>
+							<a href="/vote0" title="Donner une note de 0/3"><span class="flaticon-favourite24"></span></a>
 						</span>&nbsp; &nbsp;
 					</div>
 					<p>
@@ -102,31 +102,31 @@
 				<section id="ingredients" class="with-pub">
 					<img src="http://placehold.it/336x280" class="fr pub">
 					<h3>Ingrédients pour <select>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="6">6</option>
-							<option value="12">12</option>
-						</select> personnes</h3>
-					<span>Unités <select>
-							<option value="eu">Métrique</option>
-							<option value="en">Anglais</option>
-							<option value="us">Américain</option>
-							<option value="au">Australien</option>
-							<option value="poids">Poids</option>
-							<option value="volumes">Volumes</option>
-						</select> <a href="/">En savoir plus</a></span>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="6">6</option>
+						<option value="12">12</option>
+					</select> personnes</h3>
+					<span>Unités de mesure <select>
+						<option value="eu">Métrique</option>
+						<option value="en">Anglo-saxones</option>
+						<option value="us">Américaines</option>
+						<option value="au">Australiennes</option>
+						<option value="poids">Poids</option>
+						<option value="volumes">Volumes</option>
+					</select> <a href="/">En savoir plus</a></span>
 					<ul>
 						<li>
-    						333 g de pommes
+							333 g de pommes
 						</li>
 						<li>
-						    20 g de <a href="/">beurre</a>
+							20 g de <a href="/">beurre</a>
 						</li>
 						<li>
-						    40 g de <a href="/">sucre en poudre</a>
+							40 g de <a href="/">sucre en poudre</a>
 						</li>
 						<li>
-						    1⁄3 <a href="/">Pâte feuilletée</a>
+							1⁄3 <a href="/">Pâte feuilletée</a>
 						</li>
 					</ul>
 				</section>
@@ -204,13 +204,28 @@
 					<li>
 						<img src="img/259-14.jpg" />
 						A mon humble avis, rien n'est meilleur avec la tarte Tatin tiède qu'un peu de crème chantilly.
-						<hr />
 					</li>
 				</ol>
+				<div class="pam">
+					<p>Remarques de fin de recette</p>
+					<span class="recipe-vote">
+						Noter cette recette
+						<span class="vote">
+							<a href="/vote3" title="Donner une note de 3/3"><span class="flaticon-favourite24"></span></a>
+							<a href="/vote2" title="Donner une note de 2/3"><span class="flaticon-favourite24"></span></a>
+							<a href="/vote1" title="Donner une note de 1/3"><span class="flaticon-favourite24"></span></a>
+							<a href="/vote0" title="Donner une note de 0/3"><span class="flaticon-favourite24"></span></a>
+						</span>&nbsp; &nbsp;
+					</span>
+				</div>
 			</section>
 			<aside class="recipe-info">
-				<p>Durée / À quelle heure ?</p>
-				<p>Combien ça coute</p>
+				<section id="nutrition-facts">
+					<h3>Combien de temps ?</h3>
+				</section>
+				<section id="nutrition-facts">
+					<h3>Combien ça coûte ?</h3>
+				</section>
 				<section id="nutrition-facts">
 					<h3>Infos nutrition</h3>
 					<p>Les % sont calculés par rapport aux <a href="">Apports Nutritionnels Recommandés</a> de 2000 k-calories par jour pour une femme (<a href="">changer pour un homme</a>).</p>
@@ -280,14 +295,50 @@
 				<div class="pub">
 					<img src="http://placehold.it/336x280">
 				</div>
-				<p>Remarques de fin de recette</p>
+				<p>Push : inscription mail nouveautés</p>
 				<p>Date de dernière mise à jour</p>
-				<p>Autres recettes à voir</p>
+				<section id="other-recipes">
+					<h3>Autres recettes à voir</h3>
+				</section>
 				<div class="pub">
 					<img src="http://placehold.it/336x280">
 				</div>
-				<p>Commentaires</p>
-				<p>Suivre cette recette</p>
+				<section class="comments">
+					<h3>
+						Commentaires
+						<a href="/" title="Flux RSS des commentaire de cette recette"><span class="flaticon-rss3 cb2"></span><span class="visually-hidden">Flux RSS des commentaire de cette recette</span></a>
+					</h3>
+					<article class="comment">
+						<div class="comment-body">
+							<p>cette tarte parait delicieuse et facile jaime beacoup les tartes et les pommes et les voila reunis merci</p>
+						</div>
+						<p class="attribution">par <span class="name">monia de tunis</span> le 12 juin 2009 à 15h06</p>
+					</article>
+					<article class="comment">
+						<div class="comment-body">
+							<p>bonjour,</p>
+							<p>ma préférence va vers une pate sablé , aprés avoir longtemps hesiter / tester entre feuilletage et pate sablé .</p>
+							<p>Aujourd'hui , même a cours de temps , je fais ma pate pendant la cuisson du caramel, en final j'y gagne en temps , pas de decongelation pour le feuilletage , la pate sitôt finie est etalé sur les pommes...</p>
+							<p>Pour le beurre , le demie sel est pas mal non plus :)</p>
+							<p>Pour la chantilly , je ne suis pas fan , je reste sur cette idée d'opposition : une crème fraiche froide et non sucrée sur des pommes caramélisées chaudes et trés sucrée.</p>
+							<p>En tout cas force est de constaté que quelque soit la recette , la tarte tatin est toujours un succsés.</p>
+						</div>
+						<p class="attribution">par <span class="name">Un gourmand</span> le 16 juillet 2009 à 18h01</p>
+					</article>
+					<form class="comment" action="/" >
+						<textarea class="comment-body" name="comment" placeholder="Votre commentaire" required>
+						</textarea>
+						<p class="attribution">par <span class="name"><input name="name" placeholder="Votre nom (optionnel)" /></span> le 31 décembre 2015 à 23h59</p>
+						<p><input type="checkbox" /> Je suis un robot  <small>(Ne pas cocher, protection anti-spam)</small></p>
+						<button>Ajouter mon commentaire</button>
+					</form>
+				</section>​
+				<section id="subscribe-recipe">
+					<form action="/" >
+						<h3>Suivre cette recette</h3>
+						<input name="email" type="email" placeholder="Votre email" required /><button>Inscrivez-moi !</button>
+					</form>
+				</section>
 			</aside>
 		</section>
 	</div>
