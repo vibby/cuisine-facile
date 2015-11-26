@@ -459,6 +459,42 @@ width: 0.5em;
   background: #DC97A0;
 }
 
+/* other recipes */
+.illustrated-item {
+	display: table-cell;
+    height: 8em;
+    width: 8.2em;
+	position: relative;
+    text-align: center;
+}
+.illustrated-item img{
+	height: 7em;
+	padding: .3em;
+}
+.illustrated-item span{
+	padding: 0 .3em;
+	width: 9.5em;
+	display: block;
+	height: 1.4em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: absolute;
+	bottom: 0;
+	text-align: left;
+	text-decoration: underline;
+}
+.illustrated-item:hover span{
+	text-overflow: visible;
+	height: auto;
+	white-space: normal;
+	width: auto;
+	background-color: hsla(35, 91%, 65%, 0.5);
+}
+.illustrated-item:hover img{
+	opacity: .8;
+}
+
 /* Comments */
 .comment {
     padding: 0 0 1em;
@@ -485,7 +521,6 @@ width: 0.5em;
     color: #000;
 }
 
-/* Decoration */
 .comments,
 .comment {
     position: relative;
