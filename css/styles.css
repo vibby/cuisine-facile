@@ -489,7 +489,7 @@ width: 0.5em;
 	height: auto;
 	white-space: normal;
 	width: auto;
-	background-color: hsla(35, 91%, 65%, 0.5);
+	background-color: hsla(35, 91%, 65%, 0.6);
 }
 .illustrated-item:hover img{
 	opacity: .8;
@@ -524,6 +524,9 @@ width: 0.5em;
 .comments,
 .comment {
     position: relative;
+}
+.comments>div {
+	margin-left: 20px;
 }
 .comments:before,
 .comment:before,

@@ -76,7 +76,7 @@
 					<img src="img/259-0.jpg" class="fl"/>
 					<div class="recipe-popularity">
 						<span class="flaticon-eyeball15"></span> 216 696&nbsp; &nbsp;
-						<a href="/" title="Voir les commentaires"><span class="flaticon-speech90"></span> <strong>28</strong></a>&nbsp; &nbsp;
+						<a href="#comments" title="Voir les commentaires"><span class="flaticon-speech90"></span> <strong>28</strong></a>&nbsp; &nbsp;
 						<span title="Note de 2.8/3 basé sur 19 votes"><span class="flaticon-star129"></span> <strong>2.8</strong><small>/3</small></span>
 						<span class="vote">
 							<a href="/vote3" title="Donner une note de 3/3"><span class="flaticon-favourite24"></span></a>
@@ -98,7 +98,7 @@
 					<a href="/">Suivre cette recette</a>
 					<a href="/">Envoyer a un ami</a>
 					<a href="/">Contacter l’auteur</a>
-					<a href="/">Commenter la recette</a>
+					<a href="#add-comment">Commenter la recette</a>
 				</nav>
 				<section id="ingredients" class="with-pub">
 					<img src="http://placehold.it/336x280" class="fr pub">
@@ -322,7 +322,7 @@
 				<div class="pub">
 					<img src="http://placehold.it/336x280">
 				</div>
-				<section class="comments">
+				<section id="comments" class="comments">
 					<h3>
 						Commentaires
 						<a href="/" title="Flux RSS des commentaire de cette recette"><span class="flaticon-rss3 cb2"></span><span class="visually-hidden">Flux RSS des commentaire de cette recette</span></a>
@@ -344,9 +344,12 @@
 						</div>
 						<p class="attribution">par <span class="name">Un gourmand</span> le 16 juillet 2009 à 18h01</p>
 					</article>
+					<div id="add-comment" >
+						<p><strong>Ajoutez votre commentaire à cette recette :</strong> ce qui vous a plu ou déplu, toute modification, résultat obtenu, signaler une erreur ou une omission, etc. Vous pouvez également poser une question, je réponds toujours, à moins que quelqu'un ne l'ai fait avant moi. N'hésitez pas à vous exprimer, je suis toujours très intéressé par votre opinion.</p>
+						<p>Merci de ne pas écrire en SMS ou uniquement en MAJUSCULES, sinon votre envoi pourrait être rejeté. Je vous invite à consulter les <a href="/">conseils pour déposer un commentaire ou une image</a>.</p>
+					</div>
 					<form class="comment" action="/" >
-						<textarea class="comment-body" name="comment" placeholder="Votre commentaire" required>
-						</textarea>
+						<textarea class="comment-body" name="comment" placeholder="Votre commentaire" required></textarea>
 						<p class="attribution">par <span class="name"><input name="name" placeholder="Votre nom (optionnel)" /></span> le 31 décembre 2015 à 23h59</p>
 						<p><input type="checkbox" /> Je suis un robot  <small>(Ne pas cocher, protection anti-spam)</small></p>
 						<button>Ajouter mon commentaire</button>
