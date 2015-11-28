@@ -80,6 +80,14 @@ button:hover, button:focus {
 	border-color: #3498DB;
 }
 
+.flaticon-flag {
+	border: 1px solid #2980B9;
+    display: inline-block;
+    height: 1em;
+    line-height: 0.9em;
+    margin-top: 0.5em;
+}
+
 /* Header */
 #top-links {
 	position: relative;
@@ -387,6 +395,28 @@ width: 0.5em;
 	padding: .3em .6em;
 	background: #2980B9;
 }
+.recipe-actions .arrow {
+	position: relative;
+}
+.recipe-actions .arrow:after {
+	top: 0;
+	border: solid transparent;
+	content: " ";
+	height: .1em;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-width: 1em;
+	border-color: rgba(136, 183, 213, 0);
+}
+.recipe-actions .arrow-left:after {
+	border-right-color: #2980B9;
+	right: 100%;
+}
+.recipe-actions .arrow-right:after {
+	border-left-color: #2980B9;
+	left: 100%;
+}
 .recipe-popularity{
 	float: right;
 	margin-bottom: 0.5em;
@@ -397,12 +427,18 @@ width: 0.5em;
 .vote > *{
 	float: right;
 }
+.vote {
+	display: inline;
+}
+.vote label {
+	margin: 0;
+}
 .vote > *:hover, .vote > *:hover+*, .vote > *:hover+*+*, .vote > *:hover+*+*+* {
 	color: #094e7b;
 	background: rgba(231, 157, 51, .4);
 }
-.vote>a:hover>span:before, .vote>a:hover+a>span:before, .vote>a:hover+a+a>span:before, .vote>a:hover+a+a+a>span:before {
-	content: "\e008";
+.vote>label:hover>span:before, .vote>label:hover+label>span:before, .vote>label:hover+label+label>span:before, .vote>label:hover+label+label+label>span:before, .vote input:checked+span:before {
+	content: "\e009";
 }
 #ingredients li {
     padding: 0.2em 0;
@@ -509,6 +545,7 @@ width: 0.5em;
     border-radius: 5px;
     background: #fff;
     width: 100%;
+    display: block;
 }
 .comment-body p:last-child {
     margin: 0;
@@ -659,7 +696,7 @@ ol > li:before {
     text-align:center;
     border: 1px solid #555;
     line-height: 1em;
-	font-family: 'Cookie', cursive;
+	font-family: 'Cookie', 'Segoe Print', 'Chalkboard', 'Comic Sans MS', cursive, sans-serif;
 	transform: rotate(10deg);
 	box-shadow: 2px 2px 5px #555;
 }
@@ -669,11 +706,11 @@ ol ol li:last-child {margin-bottom:0;}
 ol+*{
 	clear: both;
 }
-.recipe-vote {
+#recipe .vote {
     float: left;
     padding-bottom: 1em;
 }
-.recipe-vote, .recipe-vote span:before {
+#recipe .vote, #recipe .vote span:before {
     font-size: 30px;
 }
 .pub {

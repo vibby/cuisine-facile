@@ -19,24 +19,27 @@ font-style: normal;
 .flaticon-favourite24:before {
 	content: "\e001";
 }
-.flaticon-home166:before {
+.flaticon-flag89:before {
 	content: "\e002";
 }
-.flaticon-location70:before {
+.flaticon-home166:before {
 	content: "\e003";
 }
-.flaticon-mail3:before {
+.flaticon-location70:before {
 	content: "\e004";
 }
-.flaticon-menu48:before {
+.flaticon-mail3:before {
 	content: "\e005";
 }
-.flaticon-rss3:before {
+.flaticon-menu48:before {
 	content: "\e006";
 }
-.flaticon-speech90:before {
+.flaticon-rss3:before {
 	content: "\e007";
 }
-.flaticon-star129:before {
+.flaticon-speech90:before {
 	content: "\e008";
+}
+.flaticon-star129:before {
+	content: "\e009";
 }

@@ -12,10 +12,11 @@
 <body id="body">
 	<header id="header" role="banner" class="line bwh">
 		<nav id="top-links" class="wlimit-l">
+			<a href="/" title="English version"><span class="flaticon-flag89 flaticon-flag cb2"></span><span class="visually-hidden">English version</span></a>
 			<a href="/"><span class="flaticon-location70 cb2"></span> <span class="sm-hidden">Plan du site</span></a>
 			<a href="/"><span class="flaticon-mail3 cb2"></span> <span class="sm-hidden">Contact</span></a>
 			<a href="/" class="sm-hidden"><span class="flaticon-mail3 cor"></span> Nouveautés par mail</a>
-			<a href="/"><span class="flaticon-rss3 cb2"></span><span class="visually-hidden">Flux RSS</span></a>
+			<a href="/" title="Flux RSS"><span class="flaticon-rss3 cb2"></span><span class="visually-hidden">Flux RSS</span></a>
 		</nav>
 		<hgroup class="wlimit title-grp">
 			<h1 class="cbd">Cuisine-facile.com</h1>
@@ -49,8 +50,7 @@
 							<input type="hidden" name="cref" value="" />
 							<input type="hidden" name="ie" value="utf-8" />
 							<input type="hidden" name="hl" value="" />
-							<input name="q" type="text" placeholder="Votre recherche ici" class="cse-input" />
-							<input type="submit" name="sa" value="ok" class="cse-submit" />
+							<input name="q" type="text" placeholder="Votre recherche ici" class="cse-input" /><button type="submit" name="sa" class="cse-submit">ok</button>
 						</form>
 						<script type="text/javascript" src="REMOVEhttps://cse.google.fr/cse/tools/onthefly?form=searchbox_demo&lang="></script>
 					</li>
@@ -75,15 +75,17 @@
 				<section id="intro">
 					<img src="img/259-0.jpg" class="fl"/>
 					<div class="recipe-popularity">
-						<span class="flaticon-eyeball15"></span> 216 696&nbsp; &nbsp;
-						<a href="#comments" title="Voir les commentaires"><span class="flaticon-speech90"></span> <strong>28</strong></a>&nbsp; &nbsp;
-						<span title="Note de 2.8/3 basé sur 19 votes"><span class="flaticon-star129"></span> <strong>2.8</strong><small>/3</small></span>
-						<span class="vote">
-							<a href="/vote3" title="Donner une note de 3/3"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote2" title="Donner une note de 2/3"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote1" title="Donner une note de 1/3"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote0" title="Donner une note de 0/3"><span class="flaticon-favourite24"></span></a>
-						</span>&nbsp; &nbsp;
+						<span class="flaticon-eyeball15"></span> 216 696<span class="visually-hidden"> vues</span>&nbsp; &nbsp;
+						<a href="#comments" title="Voir les commentaires"><span class="flaticon-speech90"></span> <strong>28</strong><span class="visually-hidden"> commentaires</span></a>&nbsp; &nbsp;
+						<span title="Note de 2.8/3 basé sur 19 votes"><span class="flaticon-star129"></span> <span class="visually-hidden">note : </span><strong>2.8</strong><small>/3</small></span>
+						<form class="vote">
+							<span class="visually-hidden">Noter la recette</span>
+							<label title="Donner une note de 3/3"><input type="radio" required name="vote" class="visually-hidden" value="3" /><span class="flaticon-favourite24"></span><span class="visually-hidden">3</span></label>
+							<label title="Donner une note de 2/3"><input type="radio" required name="vote" class="visually-hidden" value="2" /><span class="flaticon-favourite24"></span><span class="visually-hidden">2</span></label>
+							<label title="Donner une note de 1/3"><input type="radio" required name="vote" class="visually-hidden" value="1" /><span class="flaticon-favourite24"></span><span class="visually-hidden">1</span></label>
+							<label title="Donner une note de 0/3"><input type="radio" required name="vote" class="visually-hidden" value="0" /><span class="flaticon-favourite24"></span><span class="visually-hidden">0</span></label>
+							<span class="visually-hidden"><button>Noter</button></span>
+						</form>&nbsp; &nbsp;
 					</div>
 					<p>
 						La tarte Tatin est un grand classique des desserts de la cuisine française, c'est une tarte aux pommes qui est cuite à l'envers : on commence par cuire les pommes sur le feu dans du sucre jusqu'à ce qu'il caramélise, puis on pose la pâte dessus et on fini de cuire le tout au four. Pour servir, on retourne la tarte de façon à ce que les pommes soient à nouveau au dessus. Le gout acidulé des pommes, mélangé au caramel, et au croustillant de la pâte est extraordinaire.
@@ -91,14 +93,18 @@
 					<p>
 						La recette classique est plutôt faite avec une pâte brisée, mais je vous propose ici une version que je préfère, avec une <a href="/">pâte feuilletée</a>. C'est une recette assez simple, la seule difficulté est dans le "retournage" de la tarte cuite et chaude, qui est un moment délicat.
 					</p>
-					<p>Dernière mise à jour : 30 Octobre 2015</p>
+					<p class="fr">Dernière mise à jour : 30 Octobre 2015</p>
 				</section>
 				<nav class="recipe-actions">
 					<a href="/">Ajouter à mon cahier</a>
-					<a href="/">Suivre cette recette</a>
-					<a href="/">Envoyer a un ami</a>
+					<a href="#subscribe-recipe">Suivre cette recette</a>
+					<a href="/">Envoyer à un ami</a>
 					<a href="/">Contacter l’auteur</a>
 					<a href="#add-comment">Commenter la recette</a>
+				</nav>
+				<nav class="recipe-actions">
+					<a href="/" class="arrow arrow-left">Précédente : <strong>Tarte pommes-poires</strong></a>
+					<a href="/" class="arrow arrow-right">Suivante : <strong>Tartelette pistache-griottines</strong></a>
 				</nav>
 				<section id="ingredients" class="with-pub">
 					<img src="http://placehold.it/336x280" class="fr pub">
@@ -134,7 +140,10 @@
 			</aside>
 			<section id="recipe" class="bwh">
 				<nav class="recipe-actions">
-					<a href="/">Version diaporama</a><a href="/">Version imprimable</a><a href="/">Version imprimable avec photos</a><a href="/">Version PDF</a>
+					<a href="/">Version diaporama</a>
+					<a href="/">Version imprimable</a>
+					<a href="/">Version imprimable avec photos</a>
+					<a href="/">Version PDF</a>
 				</nav>
 				<div class="pub">
 					<img src="http://placehold.it/728x90">
@@ -209,15 +218,14 @@
 				</ol>
 				<div class="pam">
 					<p>Remarques de fin de recette</p>
-					<span class="recipe-vote">
-						Noter cette recette
-						<span class="vote">
-							<a href="/vote3" title="Donner une note de 3/3"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote2" title="Donner une note de 2/3"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote1" title="Donner une note de 1/3"><span class="flaticon-favourite24"></span></a>
-							<a href="/vote0" title="Donner une note de 0/3"><span class="flaticon-favourite24"></span></a>
-						</span>&nbsp; &nbsp;
-					</span>
+					<form class="vote">
+						Noter la recette&nbsp;
+						<label title="Donner une note de 3/3"><input type="radio" required name="vote" class="visually-hidden" value="3" /><span class="flaticon-favourite24"></span><span class="visually-hidden">3</span></label>
+						<label title="Donner une note de 2/3"><input type="radio" required name="vote" class="visually-hidden" value="2" /><span class="flaticon-favourite24"></span><span class="visually-hidden">2</span></label>
+						<label title="Donner une note de 1/3"><input type="radio" required name="vote" class="visually-hidden" value="1" /><span class="flaticon-favourite24"></span><span class="visually-hidden">1</span></label>
+						<label title="Donner une note de 0/3"><input type="radio" required name="vote" class="visually-hidden" value="0" /><span class="flaticon-favourite24"></span><span class="visually-hidden">0</span></label>
+						<span class="visually-hidden"><button>Noter</button></span>
+					</form>&nbsp; &nbsp;
 				</div>
 			</section>
 			<aside class="recipe-info">
@@ -328,30 +336,30 @@
 						<a href="/" title="Flux RSS des commentaire de cette recette"><span class="flaticon-rss3 cb2"></span><span class="visually-hidden">Flux RSS des commentaire de cette recette</span></a>
 					</h3>
 					<article class="comment">
-						<div class="comment-body">
+						<quote class="comment-body">
 							<p>cette tarte parait delicieuse et facile jaime beacoup les tartes et les pommes et les voila reunis merci</p>
-						</div>
+						</quote>
 						<p class="attribution">par <span class="name">monia de tunis</span> le 12 juin 2009 à 15h06</p>
 					</article>
 					<article class="comment">
-						<div class="comment-body">
+						<quote class="comment-body">
 							<p>bonjour,</p>
 							<p>ma préférence va vers une pate sablé , aprés avoir longtemps hesiter / tester entre feuilletage et pate sablé .</p>
 							<p>Aujourd'hui , même a cours de temps , je fais ma pate pendant la cuisson du caramel, en final j'y gagne en temps , pas de decongelation pour le feuilletage , la pate sitôt finie est etalé sur les pommes...</p>
 							<p>Pour le beurre , le demie sel est pas mal non plus :)</p>
 							<p>Pour la chantilly , je ne suis pas fan , je reste sur cette idée d'opposition : une crème fraiche froide et non sucrée sur des pommes caramélisées chaudes et trés sucrée.</p>
 							<p>En tout cas force est de constaté que quelque soit la recette , la tarte tatin est toujours un succsés.</p>
-						</div>
+						</quote>
 						<p class="attribution">par <span class="name">Un gourmand</span> le 16 juillet 2009 à 18h01</p>
 					</article>
 					<div id="add-comment" >
 						<p><strong>Ajoutez votre commentaire à cette recette :</strong> ce qui vous a plu ou déplu, toute modification, résultat obtenu, signaler une erreur ou une omission, etc. Vous pouvez également poser une question, je réponds toujours, à moins que quelqu'un ne l'ai fait avant moi. N'hésitez pas à vous exprimer, je suis toujours très intéressé par votre opinion.</p>
-						<p>Merci de ne pas écrire en SMS ou uniquement en MAJUSCULES, sinon votre envoi pourrait être rejeté. Je vous invite à consulter les <a href="/">conseils pour déposer un commentaire ou une image</a>.</p>
+						<p>Merci de ne pas écrire en SMS ou uniquement en MAJUSCULES, votre commentaire pourrait être rejeté. Je vous invite à consulter les <a href="/">conseils pour déposer un commentaire ou une image</a>.</p>
 					</div>
 					<form class="comment" action="/" >
 						<textarea class="comment-body" name="comment" placeholder="Votre commentaire" required></textarea>
 						<p class="attribution">par <span class="name"><input name="name" placeholder="Votre nom (optionnel)" /></span> le 31 décembre 2015 à 23h59</p>
-						<p><input type="checkbox" /> Je suis un robot  <small>(Ne pas cocher, protection anti-spam)</small></p>
+						<p><input type="checkbox" /> Je ne suis pas un robot  <small>(Merci de la cocher, c’est une protection anti-spam)</small></p>
 						<button>Ajouter mon commentaire</button>
 					</form>
 				</section>​
