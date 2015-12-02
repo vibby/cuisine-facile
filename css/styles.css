@@ -88,6 +88,36 @@ button:hover, button:focus {
     margin-top: 0.5em;
 }
 
+/* Floating links */
+.direct-access {
+	z-index: 1100;
+	position: fixed;
+	top: -10px;
+	right: 0;
+	border: solid #2980B9;
+	border-width: 0 0 2px 2px;
+	border-radius: 0 0 0 1em;
+	box-shadow: -0.8em 0 1em rgba(0, 0, 0, 0.3);
+}
+.direct-access>*:first-child{
+	font-weight: bold;
+	max-width: 200px;
+	position: relative;
+	top: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	padding-left: .6em;
+	border-radius: 0 0 0 1em;
+}
+.direct-access *{
+	display: inline-block;
+	padding: .3em;
+}
+.direct-access *:last-child {
+	padding-right: .6em;
+}
+
 /* Header */
 #top-links {
 	position: relative;
@@ -791,6 +821,50 @@ ol+*{
 #recipe .vote, #recipe .vote span:before {
     font-size: 30px;
 }
+
+/* FOOTER */
+#footer {
+	margin-top: 2em;
+	border-top: 2em solid #2980B9;
+	background-color: rgba(255, 255, 255, .65);
+	text-align: left;
+	padding-bottom: 4em;
+}
+#footer>* {
+	border-top: 1em solid #E79D33;
+}
+ul.site-map {
+	padding: 1em 0 0;
+	margin: 0;
+}
+ul.site-map ul {
+	list-style: outside disc;
+	padding: 0;
+}
+ul.site-map li{
+	margin-left: 1em;
+}
+ul.site-map li.parent{
+	font-size: 1.4em;
+    list-style: none;
+}
+ul.site-map ul>li.parent{
+    margin: .7em 0 .7em 0;
+}
+ul.site-map .parent>*{
+	font-size: 1.4rem;
+}
+ul.site-map .parent>h3, ul.site-map li h3{
+	font-size: 2rem;
+	font-family: Verdana, Verdana, Geneva, sans-serif;
+	margin-top: 1em;
+}
+.site-map>*{
+	float: left;
+	min-width: 200px;
+	max-width: 235px;
+}
+
 .pub {
 	text-align: center;
 }
@@ -799,3 +873,4 @@ ol+*{
 	float: none !important;
 	margin: 16px;
 }
+
