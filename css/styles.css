@@ -89,17 +89,19 @@ button:hover, button:focus {
 }
 
 /* Floating links */
-.direct-access {
+#direct-access {
 	z-index: 1100;
 	position: fixed;
-	top: -10px;
+	top: -100px;
 	right: 0;
 	border: solid #2980B9;
 	border-width: 0 0 2px 2px;
 	border-radius: 0 0 0 1em;
 	box-shadow: -0.8em 0 1em rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 1s;
+    transition: top 1s;
 }
-.direct-access>*:first-child{
+#direct-access>*:first-child{
 	font-weight: bold;
 	max-width: 200px;
 	position: relative;
@@ -110,11 +112,11 @@ button:hover, button:focus {
 	padding-left: .6em;
 	border-radius: 0 0 0 1em;
 }
-.direct-access *{
+#direct-access *{
 	display: inline-block;
 	padding: .3em;
 }
-.direct-access *:last-child {
+#direct-access *:last-child {
 	padding-right: .6em;
 }
 
