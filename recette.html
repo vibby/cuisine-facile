@@ -54,7 +54,7 @@
 							<input type="hidden" name="hl" value="" />
 							<input name="q" type="text" placeholder="Votre recherche ici" class="cse-input" /><button type="submit" name="sa" class="cse-submit">ok</button>
 						</form>
-						<script type="text/javascript" src="https://cse.google.fr/cse/tools/onthefly?form=searchbox_demo&amp;lang=fr"></script>
+						<script type="text/javascript" src="NONEhttps://cse.google.fr/cse/tools/onthefly?form=searchbox_demo&amp;lang=fr"></script>
 					</li>
 				</ul>
 			</div>
@@ -112,7 +112,6 @@
 					<a href="/" class="arrow arrow-right">Suivante : <strong>Tartelette pistache-griottines</strong></a>
 				</nav>
 				<section id="ingredients" class="with-pub">
-					<img alt="Publicité" src="http://placehold.it/336x280" class="fr pub">
 					<form>
 						<h3>Ingrédients pour <select class="auto-submit" name="pour">
 							<option value="2">2</option>
@@ -147,29 +146,34 @@
 					</ul>
 				</section>
 				<section id="coast">
+					<form >
 					<h3>Combien ça coûte ? <small><em>Simple estimation <a href="">Plus d'info…</a></em></small></h3>
-					<p>Pour 2 personnes : <strong>0.78 <select name="monnaie">
+					<p>Pour 2 personnes : <strong>0.78 <select name="monnaie" class="auto-submit">
 						<option value="">€</option>
 						<option value="USD">$ USD</option>
 						<option value="GBP">£ GBP</option>
 						<option value="GBP">$c CAD</option>
 						<option value="GBP">$a AUD</option>
 					</select></strong></p>
-					<p>Par personne : <strong>0.34 <select name="monnaie">
+					</form>
+					<form >
+					<p>Par personne : <strong>0.34 <select name="monnaie" class="auto-submit">
 						<option value="">€</option>
 						<option value="USD">$ USD</option>
 						<option value="GBP">£ GBP</option>
 						<option value="GBP">$c CAD</option>
 						<option value="GBP">$a AUD</option>
 					</select></strong></p>
+					</form>
 				</section>
 				<section id="time">
 					<h3>Combien de temps ?</h3>
 					<ul>
 						<li>Préparation : <strong class="timer-prep">27 min</strong></li>
 						<li>Cuisson : <strong class="timer-bake">50 min</strong></li>
-						<li>Total : <strong>1 h 17 min</strong></li>
+						<li>Total : <strong class="timer-total">1 h 17 min</strong></li>
 					</ul>
+<!--
 					<ol class="timeline">
 						<li class="bb1" style="width:5em"><a href="#step-1"><span class="visually-hidden">Etape 1</span><img alt="Tarte tation, Étape 1" src="img/259-1.jpg" /></a></li>
 						<li class="bb1" style="width:10em"><a href="#step-2"><span class="visually-hidden">Etape 2</span><img alt="Tarte tation, Étape 2" src="img/259-2.jpg" /></a></li>
@@ -183,10 +187,8 @@
 						<li class="bb1" style="width:1em"><a href="#step-12"><span class="visually-hidden">Etape 12</span><img alt="Tarte tation, Étape 12" src="img/259-12.jpg" /></a></li>
 						<li class="bb1" style="width:1em"><a href="#step-13"><span class="visually-hidden">Etape 13</span><img alt="Tarte tation, Étape 13" src="img/259-13.jpg" /></a></li>
 					</ol>
-				</section>
-				<div class="pub fr">
-					<img alt="publicité" src="http://placehold.it/336x280">
-				</div>
+ -->
+ 					</section>
 				<section id="nutrition-facts">
 					<h3>Infos nutrition</h3>
 					<p>Les % sont calculés par rapport aux <a href="">Apports Nutritionnels Recommandés</a> de 2000 k-calories par jour pour une femme (<a href="">changer pour un homme</a>).</p>
@@ -593,10 +595,10 @@
 
 	<nav id="direct-access" class="bwh">
 		<div>Tarte tatin</div>
-		<a href="#recipe">La recette</a>
-		<a href="#comments">Commentaires</a>
-		<a href="#footer">Plan du site</a>
-		<a href="#body">Haut de page</a>
+		<a href="#recipe"><span class="flaticon-purchase1"></span> La recette</a>
+		<a href="#comments"><span class="flaticon-speech90"></span><span class="sm-hidden"> Commentaires</span></a>
+		<a href="#footer"><span class="flaticon-menu48"></span><span class="sm-hidden"> Plan du site</span></a>
+		<a href="#body"><span class="flaticon-upper10"></span><span class="sm-hidden"> Haut de page</span></a>
 	</nav>
 
 	<script type="text/javascript" src="./js/script.js"></script>

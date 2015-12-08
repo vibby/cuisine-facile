@@ -34,12 +34,18 @@ font-style: normal;
 .flaticon-menu48:before {
 	content: "\e006";
 }
-.flaticon-rss3:before {
+.flaticon-purchase1:before {
 	content: "\e007";
 }
-.flaticon-speech90:before {
+.flaticon-rss3:before {
 	content: "\e008";
 }
-.flaticon-star129:before {
+.flaticon-speech90:before {
 	content: "\e009";
+}
+.flaticon-star129:before {
+	content: "\e00a";
+}
+.flaticon-upper10:before {
+	content: "\e00b";
 }
