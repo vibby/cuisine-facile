@@ -122,7 +122,8 @@ button:hover, button:focus {
 
 /* Header */
 #top-links {
-	position: relative;
+	position: absolute;
+	right: 0;
 }
 #top-links>* {
 	float: right;
@@ -138,6 +139,7 @@ button:hover, button:focus {
 .wlimit-l {
 	max-width: 1800px;
 	margin: 0 auto;
+	position: relative;
 }
 @media (max-width: 1060px) {
 	.title-grp{
@@ -154,6 +156,11 @@ h3 {
 }
 @media (max-width: 500px) {
 	.sm-hidden, #top-links .sm-hidden, #direct-access .sm-hidden {
+		display: none;
+	}
+}
+@media (max-width: 750px) {
+	.sm2-hidden, #top-links .sm2-hidden, #direct-access .sm2-hidden {
 		display: none;
 	}
 }
@@ -613,19 +620,20 @@ ol.timeline li.bb1:before {
 
 /* other recipes */
 .illustrated-item {
-	display: table-cell;
-    height: 8em;
-    width: 8.2em;
+	display: inline-block;
+    height: 8.5em;
 	position: relative;
-    text-align: center;
+}
+.illustrated-item figure{
+	margin-top: 0;
 }
 .illustrated-item img{
-	height: 7em;
+	height: 7.5em;
 	padding: .3em;
 }
-.illustrated-item span{
+.illustrated-item figcaption{
 	padding: 0 .3em;
-	width: 9.5em;
+	max-width: 10.5em;
 	display: block;
 	height: 1.4em;
 	white-space: nowrap;
@@ -636,7 +644,7 @@ ol.timeline li.bb1:before {
 	text-align: left;
 	text-decoration: underline;
 }
-.illustrated-item:hover span{
+.illustrated-item:hover figcaption{
 	text-overflow: visible;
 	height: auto;
 	white-space: normal;
@@ -896,5 +904,6 @@ ul.site-map .parent>h3, ul.site-map li h3{
 	border-radius: 0 !important;
 	float: none !important;
 	margin: 16px;
+	max-width: 80vw;
 }
 
