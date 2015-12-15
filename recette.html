@@ -110,27 +110,27 @@
 					<a href="#add-comment">Commenter la recette</a>
 				</nav>
 				<nav class="recipe-actions">
-					<a href="/" class="arrow arrow-left">Précédente : <strong>Tarte pommes-poires</strong></a>
-					<a href="/" class="arrow arrow-right">Suivante : <strong>Tartelette pistache-griottines</strong></a>
+					<a href="/" class="arrow arrow-left hover-img"><img src="img/259-3.jpg" />Précédente : <strong>Tarte pommes-poires</strong></a>
+					<a href="/" class="arrow arrow-right hover-img"><img src="img/259-10.jpg" />Suivante : <strong>Tartelette pistache-griottines</strong></a>
 				</nav>
 				<section id="ingredients" class="with-pub">
-					<form>
-						<h3>Ingrédients pour <select class="auto-submit" name="pour">
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="6">6</option>
-							<option value="12">12</option>
-						</select> personnes</h3>
-					</form>
-					<form>
-						<span>Unités de mesure <select class="auto-submit" name="unite">
-							<option value="eu">Métrique</option>
-							<option value="en">Anglo-saxones</option>
-							<option value="us">Américaines</option>
-							<option value="au">Australiennes</option>
-							<option value="poids">Poids</option>
-							<option value="volumes">Volumes</option>
-						</select> <a href="/">En savoir plus</a></span>
+					<h3>Ingrédients</h3>
+					<span class="recipe-actions">
+						Pour
+						<a href="monnaie=USD#cost" title="Pour 2 personnes" class="active">2 personnes</a>
+						<a href="monnaie=USD#cost" title="Pour 3 personnes">3 personnes</a>
+						<a href="monnaie=GBP#cost" title="Pour 6 personnes">6 personnes</a>
+						<a href="monnaie=CAD#cost" title="Pour 12 personnes">12 personnes</a>
+					</span>
+					<form action="#ingredients">
+					<p>Unités de mesure <select class="auto-submit" name="unite">
+						<option value="eu">Métrique</option>
+						<option value="en">Anglo-saxones</option>
+						<option value="us">Américaines</option>
+						<option value="au">Australiennes</option>
+						<option value="poids">Poids</option>
+						<option value="volumes">Volumes</option>
+					</select> <a href="/">En savoir plus</a></p>
 					</form>
 					<ul>
 						<li>
@@ -147,26 +147,19 @@
 						</li>
 					</ul>
 				</section>
-				<section id="coast">
-					<form >
+				<section id="cost">
 					<h3>Combien ça coûte ? <small><em>Simple estimation <a href="">Plus d'info…</a></em></small></h3>
-					<p>Pour 2 personnes : <strong>0.78 <select name="monnaie" class="auto-submit">
-						<option value="">€</option>
-						<option value="USD">$ USD</option>
-						<option value="GBP">£ GBP</option>
-						<option value="GBP">$c CAD</option>
-						<option value="GBP">$a AUD</option>
-					</select></strong></p>
-					</form>
-					<form >
-					<p>Par personne : <strong>0.34 <select name="monnaie" class="auto-submit">
-						<option value="">€</option>
-						<option value="USD">$ USD</option>
-						<option value="GBP">£ GBP</option>
-						<option value="GBP">$c CAD</option>
-						<option value="GBP">$a AUD</option>
-					</select></strong></p>
-					</form>
+					<p>
+						<span>Pour 2 personnes : <strong>0.78 €</strong></span>
+						<span>Par personne : <strong>0.34 €</strong></span>
+						<span class="recipe-actions">
+							<a href="monnaie=USD#cost" title="EURO">€</a>
+							<a href="monnaie=USD#cost" title="USD">$</a>
+							<a href="monnaie=GBP#cost" title="GBP">£</a>
+							<a href="monnaie=CAD#cost" title="CAD">$c</a>
+							<a href="monnaie=AUD#cost" title="AUD">$a</a>
+						</span>
+					</p>
 				</section>
 				<section id="time">
 					<h3>Combien de temps ?</h3>
