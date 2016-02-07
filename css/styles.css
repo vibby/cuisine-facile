@@ -538,8 +538,6 @@ width: 0.5em;
 }
 #time ul {
 	padding: 0;
-	float: right;
-	margin-left: 1em;
 }
 #time ul>li {
 	display: inline-block;
