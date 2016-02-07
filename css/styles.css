@@ -533,6 +533,11 @@ width: 0.5em;
 	background-color: #fff;
 }
 #recipe .timer-bake, #recipe .timer-prep{
+	position: absolute;
+	right: 0;
+}
+#time ul {
+	padding: 0;
 	float: right;
 	margin-left: 1em;
 }
@@ -826,8 +831,8 @@ form.comment button {
 	}
 }
 @media (min-width: 561px) {
-	#recipe li>img {
-		float: left;
+	#recipe li>.step-text {
+		width: calc(100% - 330px);
 	}
 }
 ol {
@@ -838,11 +843,16 @@ ol > li {
     position:relative;
     padding:6px 0;
     list-style:none;
+
+}
+ol > li > .step-text, ol > li > img {
+  margin:0 0 10px 0;
+  display:inline-block;
+  vertical-align:middle;
 }
 ol > li:before {
-    content:counter(li); /* Use the counter as content */
-    counter-increment:li; /* Increment the counter by 1 */
-    /* Position and style the number */
+    content:counter(li);
+    counter-increment:li;
     position:absolute;
     top:0;
     left:-.5em;
