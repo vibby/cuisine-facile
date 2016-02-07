@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" type="image/png" href="favicon.png" />
 	<link rel="stylesheet" href="css/knacss.css" media="all">
 	<link rel="stylesheet" href="css/styles.css" media="all">
+	<!-- <link rel="stylesheet" href="css/a11y.css" media="all"> -->
 	<link rel="stylesheet" href="vendor/flaticon/flaticon.css" media="all">
 	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 </head>
@@ -34,18 +35,18 @@
 					<li class="sm-menu-hidden"><a href="/">Accueil</a></li>
 					<li class="active has-sub">
 						<a href="#recipes" id="recipes">Les recettes</a>
-						<ul class="">
+						<ul >
 							<li><a href="/">Les recettes 1</a></li>
 							<li><a href="/">Les recettes 2</a></li>
 							<li><a href="/">Les recettes 3</a></li>
 							<li><a href="/">Les recettes 4</a></li>
 						</ul>
 					</li>
-					<li class=""><a href="/">Recettes à thèmes</a></li>
-					<li class=""><a href="/">Savoir faire</a></li>
-					<li class=""><a href="/">Bricolage</a></li>
-					<li class=""><a href="/">Ce site</a></li>
-					<li class=""><a href="/">Ma cuisine facile</a></li>
+					<li ><a href="/">Recettes à thèmes</a></li>
+					<li ><a href="/">Savoir faire</a></li>
+					<li ><a href="/">Bricolage</a></li>
+					<li ><a href="/">Ce site</a></li>
+					<li ><a href="/">Ma cuisine facile</a></li>
 					<li class="has-sub">
 						<a href="/">Chercher</a>
 						<!-- L'utilisation de ce code implique que vous acceptez les conditions d'utilisation de la recherche personnalisée Google. -->
@@ -54,7 +55,7 @@
 							<input type="hidden" name="cref" value="" />
 							<input type="hidden" name="ie" value="utf-8" />
 							<input type="hidden" name="hl" value="" />
-							<input name="q" type="text" placeholder="Votre recherche ici" class="cse-input" /><button type="submit" name="sa" class="cse-submit">ok</button>
+							<input title="search" name="q" type="text" placeholder="Votre recherche ici" class="cse-input" /><button type="submit" name="sa" class="cse-submit">ok</button>
 						</form>
 						<script type="text/javascript" src="NONEhttps://cse.google.fr/cse/tools/onthefly?form=searchbox_demo&amp;lang=fr"></script>
 					</li>
@@ -110,8 +111,8 @@
 					<a href="#add-comment">Commenter la recette</a>
 				</nav>
 				<nav class="recipe-actions">
-					<a href="/" class="arrow arrow-left hover-img"><img src="img/259-3.jpg" />Précédente : <strong>Tarte pommes-poires</strong></a>
-					<a href="/" class="arrow arrow-right hover-img"><img src="img/259-10.jpg" />Suivante : <strong>Tartelette pistache-griottines</strong></a>
+					<a href="/" class="arrow arrow-left hover-img"><img src="img/259-3.jpg" alt="Tarte pommes-poires" />Précédente : <strong>Tarte pommes-poires</strong></a>
+					<a href="/" class="arrow arrow-right hover-img"><img src="img/259-10.jpg" alt="Tartelette pistache-griottines" />Suivante : <strong>Tartelette pistache-griottines</strong></a>
 				</nav>
 				<section id="ingredients" class="with-pub">
 					<h3>Ingrédients</h3>
@@ -150,7 +151,7 @@
 					</ul>
 				</section>
 				<section id="cost">
-					<h3>Combien ça coûte ? <small><em>Simple estimation <a href="">Plus d'info…</a></em></small></h3>
+					<h3>Combien ça coûte ? <small><em>Simple estimation <a href="/">Plus d’info…</a></em></small></h3>
 					<p>
 						<span>Pour 2 personnes : <strong>0.78 €</strong></span>
 						<span>Par personne : <strong>0.34 €</strong></span>
@@ -187,8 +188,8 @@
  -->
  					</section>
 				<section id="nutrition-facts">
-					<h3>Infos nutrition</h3>
-					<p>Les % sont calculés par rapport aux <a href="">Apports Nutritionnels Recommandés</a> de 2000 k-calories par jour pour une femme (<a href="">changer pour un homme</a>).</p>
+					<h3>Infos diététique</h3>
+					<p>Les % sont calculés par rapport aux <a href="/">Apports Nutritionnels Recommandés</a> de 2000 k-calories par jour pour une femme (<a href="/">changer pour un homme</a>).</p>
 					<div class="nutritions">
 						<p>Pour 100 g</p>
 						<div class="nutrition green">
@@ -376,32 +377,32 @@
 				<section class="other-recipes">
 					<h3>Autres recettes à voir</h3>
 					<a href="/" class="illustrated-item">
-						<figure>
+						<figure role="group">
 							<img alt="Un autre gateau avec un titre trèèès long" src="img/259-10.jpg" />
 							<figcaption>Un autre gateau avec un titre trèèès long</figcaption>
 						</figure>
 					</a>
 					<a href="/" class="illustrated-item">
-						<figure>
+						<figure role="group">
 							<img alt="Un bon gateau bon gateau" src="img/test2.jpg" />
 							<figcaption>Un bon gateau bon gateau</figcaption>
 						</figure>
 					</a>
 					<a href="/" class="illustrated-item">
-						<figure>
+						<figure role="group">
 							<img alt="Une autre patisserie" src="img/test1.jpg" />
 							<figcaption>Une autre patisserie</figcaption>
 						</figure>
 					</a>
 					<a href="/" class="illustrated-item">
-						<figure>
+						<figure role="group">
 							<img alt="Je n’ai plus d’idée" src="img/259-13.jpg" />
 							<figcaption>Je n’ai plus d’idée</figcaption>
 						</figure>
 					</a>
 					<form action="/" class="mtm">
 						<p>Inscrivez-vous pour recevoir les nouvelles recettes !</p>
-						<input name="email" type="email" placeholder="Votre email" required /><button>Inscrivez-moi !</button>
+						<input name="email" type="email" title="Votne email" placeholder="Votre email" required /><button>Inscrivez-moi !</button>
 					</form>
 				</section>
 				<section id="comments" class="comments">
@@ -431,17 +432,19 @@
 						<p>Merci de ne pas écrire en SMS ou uniquement en MAJUSCULES, votre commentaire pourrait être rejeté. Je vous invite à consulter les <a href="/">conseils pour déposer un commentaire ou une image</a>.</p>
 					</div>
 					<form class="comment" action="/" >
+						<label class="visually-hidden" for="comment">Commentaire</label>
 						<textarea class="comment-body" name="comment" placeholder="Votre commentaire" required></textarea>
-						<p class="attribution">par <span class="name"><input name="name" placeholder="Votre nom (optionnel)" /></span> le 31 décembre 2015 à 23h59</p>
-						<label><input type="checkbox" /> Je ne suis pas un robot  <small>(Merci de la cocher, c’est une protection anti-spam)</small></label><br />
-						<label><input type="checkbox" /> Je suis un robot  <small>(Merci de NE PAS cocher, c’est une protection anti-spam)</small></label><br />
+						<label for="name" class="attribution">par <span class="name"><input title="Nom" type="text" name="name" placeholder="Votre nom (optionnel)" /></span> le 31 décembre 2015 à 23h59</label>
+						<label for="not-robot"><input type="checkbox" name="not-robot" title="not-robot"/> Je ne suis pas un robot  <small>(Merci de la cocher, c’est une protection anti-spam)</small></label><br />
+						<label for="robot"><input type="checkbox" name="robot" title="robot"/> Je suis un robot  <small>(Merci de NE PAS cocher, c’est une protection anti-spam)</small></label><br />
 						<button>Ajouter mon commentaire</button>
 					</form>
 				</section>​
 				<section id="subscribe-recipe">
 					<form action="/" >
 						<h3>Suivre cette recette</h3>
-						<input name="email" type="email" placeholder="Votre email" required /><button>Inscrivez-moi !</button>
+						<label class="visually-hidden" for="email">Votre email</label>
+						<input name="email" title="email" type="email" placeholder="Votre email" required /><button>Inscrivez-moi !</button>
 					</form>
 				</section>
 			</aside>
