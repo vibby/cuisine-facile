@@ -85,12 +85,12 @@
 						<span title="Nombre de vues"><span class="flaticon-eyeball15"></span> 216 696<span class="visually-hidden"> vues</span></span>&nbsp; &nbsp;
 						<a href="#comments" title="Voir les commentaires"><span class="flaticon-speech90"></span> <strong>28</strong><span class="visually-hidden"> commentaires</span></a>&nbsp; &nbsp;
 						<span title="Note de 2.8/3 basé sur 19 votes"><span class="flaticon-star129"></span> <span class="visually-hidden">note : </span><strong>2.8</strong><small>/3</small></span>
-						<form class="vote">
+						<form class="vote" action="">
 							<span class="visually-hidden">Noter la recette</span>
-							<label title="Attribuer une note de 3/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="3" /><span class="flaticon-favourite24"></span><span class="visually-hidden">3</span></label>
-							<label title="Attribuer une note de 2/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="2" /><span class="flaticon-favourite24"></span><span class="visually-hidden">2</span></label>
-							<label title="Attribuer une note de 1/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="1" /><span class="flaticon-favourite24"></span><span class="visually-hidden">1</span></label>
-							<label title="Attribuer une note de 0/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="0" /><span class="flaticon-favourite24"></span><span class="visually-hidden">0</span></label>
+							<label title="Attribuer une note de 3/3" for="vote3"><input type="radio" required id="vote3" name="vote" class="auto-submit visually-hidden" value="3" /><span class="flaticon-favourite24"></span><span class="visually-hidden">3</span></label>
+							<label title="Attribuer une note de 2/3" for="vote2"><input type="radio" required id="vote2" name="vote" class="auto-submit visually-hidden" value="2" /><span class="flaticon-favourite24"></span><span class="visually-hidden">2</span></label>
+							<label title="Attribuer une note de 1/3" for="vote1"><input type="radio" required id="vote1" name="vote" class="auto-submit visually-hidden" value="1" /><span class="flaticon-favourite24"></span><span class="visually-hidden">1</span></label>
+							<label title="Attribuer une note de 0/3" for="vote0"><input type="radio" required id="vote0" name="vote" class="auto-submit visually-hidden" value="0" /><span class="flaticon-favourite24"></span><span class="visually-hidden">0</span></label>
 							<span class="visually-hidden"><button>Noter</button></span>
 						</form>&nbsp; &nbsp;
 					</div>
@@ -365,11 +365,12 @@
 					<h3>Source</h3>
 					<p>Maison, mais d'après une recette de Gaston Lenôtre.</p>
 					<h3>Noter la recette</h3>
-					<form class="vote">
-						<label title="Attribuer une note de 3/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="3" /><span class="flaticon-favourite24"></span><span class="visually-hidden">3</span></label>
-						<label title="Attribuer une note de 2/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="2" /><span class="flaticon-favourite24"></span><span class="visually-hidden">2</span></label>
-						<label title="Attribuer une note de 1/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="1" /><span class="flaticon-favourite24"></span><span class="visually-hidden">1</span></label>
-						<label title="Attribuer une note de 0/3"><input type="radio" required name="vote" class="auto-submit visually-hidden" value="0" /><span class="flaticon-favourite24"></span><span class="visually-hidden">0</span></label>
+					<form class="vote" action="">
+						<span class="visually-hidden">Noter la recette</span>
+						<label title="Attribuer une note de 3/3" for="vote3"><input type="radio" required id="vote3" name="vote" class="auto-submit visually-hidden" value="3" /><span class="flaticon-favourite24"></span><span class="visually-hidden">3</span></label>
+						<label title="Attribuer une note de 2/3" for="vote2"><input type="radio" required id="vote2" name="vote" class="auto-submit visually-hidden" value="2" /><span class="flaticon-favourite24"></span><span class="visually-hidden">2</span></label>
+						<label title="Attribuer une note de 1/3" for="vote1"><input type="radio" required id="vote1" name="vote" class="auto-submit visually-hidden" value="1" /><span class="flaticon-favourite24"></span><span class="visually-hidden">1</span></label>
+						<label title="Attribuer une note de 0/3" for="vote0"><input type="radio" required id="vote0" name="vote" class="auto-submit visually-hidden" value="0" /><span class="flaticon-favourite24"></span><span class="visually-hidden">0</span></label>
 						<span class="visually-hidden"><button>Noter</button></span>
 					</form>&nbsp; &nbsp;
 				</div>
@@ -435,10 +436,10 @@
 					</div>
 					<form class="comment" action="/" >
 						<label class="visually-hidden" for="comment">Commentaire</label>
-						<textarea class="comment-body" name="comment" placeholder="Votre commentaire" required></textarea>
+						<textarea name="comment" placeholder="Votre commentaire" required></textarea>
 						<label for="name" class="attribution">par <span class="name"><input title="Nom" type="text" name="name" placeholder="Votre nom (optionnel)" /></span> le 31 décembre 2015 à 23h59</label>
-						<label for="not-robot"><input type="checkbox" name="not-robot" title="not-robot"/> Je ne suis pas un robot  <small>(Merci de la cocher, c’est une protection anti-spam)</small></label><br />
-						<label for="robot"><input type="checkbox" name="robot" title="robot"/> Je suis un robot  <small>(Merci de NE PAS cocher, c’est une protection anti-spam)</small></label><br />
+						<label for="not-robot"><input type="checkbox" id="not-robot" title="not-robot"/> Je ne suis pas un robot  <small>(Merci de la cocher, c’est une protection anti-spam)</small></label><br />
+						<label for="robot"><input type="checkbox" id="robot" title="robot"/> Je suis un robot  <small>(Merci de NE PAS cocher, c’est une protection anti-spam)</small></label><br />
 						<button>Ajouter mon commentaire</button>
 					</form>
 				</section>​

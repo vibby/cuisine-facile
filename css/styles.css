@@ -354,6 +354,11 @@ h3 {
 #searchbox .cse-submit {
 }
 
+/* HOMEPAGE ========== */
+.home1 {
+	/*display: table;*/
+}
+
 /* BREADCRUMB ============= */
 #navpath {
 	font-size: 0.85em;
@@ -693,6 +698,9 @@ ol.timeline li.bb1:before {
     width: 100%;
     display: block;
 }
+.comment:nth-child(odd) .comment-body {
+    background: #FFFFF0;
+}
 .comment-body p:last-child {
     margin: 0;
 }
@@ -758,6 +766,10 @@ form.comment:after {
 form.comment textarea {
 	border: 2px solid #3498DB;
     overflow: visible;
+    background: #FFF;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
 }
 form.comment textarea:focus {
 	border-color: #E79D33;
