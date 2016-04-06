@@ -949,3 +949,86 @@ ul.site-map .parent>h3, ul.site-map li h3{
 	max-width: 80vw;
 }
 
+
+/* Homepage */
+.home-block {
+	border-radius: 1em;
+	background: rgba(255, 255, 255, 0.65);
+    margin-top: 1em;
+    padding: 1em;
+}
+.home-block.red {
+	background: rgba(180, 0, 0, 0.65);
+	color: #FFF;
+}
+.home-block.red a {
+	color: #FFF;
+}
+.home-block.green {
+	background: rgba(0, 75, 0, 0.65);
+	color: #FFF;
+}
+.home-block.recipe h2 {
+	margin-bottom: 0;
+}
+.home-block.recipe img {
+	width: 100%;
+}
+.cookie {
+	font-family: 'Cookie', 'Segoe Print', 'Chalkboard', 'Comic Sans MS', cursive, sans-serif;
+	font-size: 2em;
+	color: #b9791e;
+	line-height: 1em;
+}
+
+ul.home-proposal {
+	padding-left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border-radius: 0 0 1em 1em;
+	border-bottom: 2px solid #e79d33;
+}
+.home-proposal li{
+	list-style: none;
+	display: inline-block;
+}
+.home-proposal img{
+	height: 5.15em;
+}
+
+.home-list img{
+	width: 30%;
+	float: left;
+	margin-right: 0.5em;
+}
+.home-list ul{
+	padding-left: 0;
+	list-style: none;
+}
+.home-list li{
+	clear: left;
+	margin-bottom: 0.8em;
+}
+.home-list a {
+    text-decoration: none;
+}
+.home-list div {
+    border-bottom: 1px solid #888;
+    color: #888;
+    font-size: 0.8em;
+}
+
+@media (max-width: 950px) {
+	[class*="-mid-2"] > * {
+		width: calc(100% * 1 / 2 - 1em - .01px);
+	}
+	[class*="-mid-2"] > .med-flexitem-double {
+		width: calc(100% - 1em - .01px);
+	}
+}
+@media (max-width: 600px) {
+  [class*="-cute-1"] > * {
+    width: calc(100% - 1em - .01px);
+  }
+}
+
